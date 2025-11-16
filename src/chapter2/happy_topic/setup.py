@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'hello'
+package_name = 'happy_topic'
 
 setup(
     name=package_name,
@@ -14,15 +14,15 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ubuntu',
-    maintainer_email='ubuntu@todo.todo',
+    maintainer_email='e1x22089@oit.ac.jp',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'hello_node = hello.hello_node:main',
-            'happy_node = hello.happy_node2:main',
-            'happy_node3 = hello.happy_node3:main'
+            'happy_publisher_node = happy_topic.happy_publisher_node:main',
+            'fuck_subscriber_node = happy_topic.fuck_subscriber_node:main',
+            'fuck_pub_and_sub_node = happy_topic.fuck_pub_and_sub_node:main'
         ],
     },
 )
